@@ -3,30 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- CHANGE THESE -->
   <title>Akosua Danso — Portfolio</title>
   <meta name="description" content="Your short bio here">
-
   <link rel="stylesheet" href="style.css" />
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@200..900&family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
-
 </head>
 
 <body class="home-page">
 
 <main>
-
-  <!-- ================= HEADER ================= -->
+  <!-- HEADER -->
   <header class="header">
-    <!-- STAR (LEFT) -->
     <div id="symbol" class="symbol" onclick="goWork()">ಇ.</div>
-
-    <!-- NAV (RIGHT, TEXT LINKS) -->
     <nav class="nav">
       <span id="worktop" class="nav-item active" onclick="goWork()">UX Design</span>
       <span id="playtop" class="nav-item" onclick="goPlay()">Visual Design</span>
@@ -34,45 +26,44 @@
     </nav>
   </header>
 
-  <!-- ================= PANELS ================= -->
+  <!-- PANELS -->
   <ul class="home">
-
-    <!-- ===== WORK ===== -->
+    <!-- WORK PANEL -->
     <li id="work" class="panel">
-      <section class="intro">
-        <p>
-          <Strong>AKOSUA DANSO</Strong> is a developer & designer creating
-          thoughtful, interactive, and story-driven work.
-        </p>
-      </section>
+      <div class="work-container">
+        <section class="intro">
+          <p>
+            <strong>AKOSUA DANSO</strong> is a developer & designer creating
+            thoughtful, interactive, and story-driven work.
+          </p>
+        </section>
 
-      <section class="projects">
-        <a class="project-card" href="projects/craft-connect.html">
+        <section class="projects">
+          <a class="project-card" href="projects/craft-connect.html">
             <img src="images/cctitle.png" alt="Craft Connect preview">
-          <sub class="project-type">UX/UI Design</sub>
-          <p><strong>Craft Connect -> Hobbyist </strong> </p>
-          <sub>A community-driven platform for discovering crafts, exchanging materials, and connecting with local creatives.</sub>
-        </a>
+            <sub class="project-type">UX/UI Design</sub>
+            <p><strong>Craft Connect -> Hobbyist</strong></p>
+            <sub>A community-driven platform for discovering crafts, exchanging materials, and connecting with local creatives.</sub>
+          </a>
 
-        <a class="project-card" href="projects/project-template.html">
-            <img src="images/placeholder.jpeg" alt="Project preview">
-          <sub class="project-type">Mobile App Development & UI/UX Design </sub>
-          <p><strong>PocketShelf</strong></p>
-          <sub>Another short description.</sub>
-        </a>
+          <a class="project-card" href="projects/project-template.html">
+            <img src="images/pstitle.png" alt="Project preview">
+            <sub class="project-type">Mobile Development & UI/UX Design</sub>
+            <p><strong>PocketShelf</strong></p>
+            <sub>Another short description.</sub>
+          </a>
 
-        <a class="project-card" href="projects/project-template.html">
+          <a class="project-card" href="projects/project-template.html">
             <img src="images/placeholder.jpeg" alt="Project preview">
             <sub class="project-type">Web Design</sub>
             <p><strong>Project Two</strong></p>
             <sub>Another short description.</sub>
           </a>
-      </section>
+        </section>
+      </div>
     </li>
 
-    
-
-    <!-- ===== ETC ===== -->
+    <!-- ETC PANEL -->
     <li id="play" class="panel">
       <section class="projects">
         <div class="project-card">
@@ -82,30 +73,22 @@
       </section>
     </li>
 
-    <!-- ===== ABOUT ===== -->
+    <!-- ABOUT PANEL -->
     <li id="about" class="panel">
       <section class="about">
-        <p>
-          I’m a designer interested in systems, culture, and interaction.
-          This is where your longer bio goes.
-        </p>
-
-        <p>
-          <strong>Skills:</strong> Design, Web, Motion<br>
-          <strong>Email:</strong> you@email.com
-        </p>
+        <p>I’m a designer interested in systems, culture, and interaction. This is where your longer bio goes.</p>
+        <p><strong>Skills:</strong> Design, Web, Motion<br>
+        <strong>Email:</strong> you@email.com</p>
       </section>
     </li>
-
   </ul>
 
-  <!-- ================= FOOTER ================= -->
+  <!-- FOOTER -->
   <footer class="footer">
     <a href="#" target="_blank">Resume</a>
     <a href="https://www.linkedin.com/in/akosuad/" target="_blank">LinkedIn</a>
     <a href="mailto:you@email.com">Email</a>
   </footer>
-
 </main>
 
 <script src="script.js"></script>
