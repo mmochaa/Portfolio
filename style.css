@@ -16,11 +16,18 @@
   /* ===== BASE ===== */
   body {
     /* font-family: system-ui, sans-serif; */
-    font-family: "Inconsolata", monospace;
+    /* other fonts: Courier Prime, Cousine, Xanh Mono, Inconsolata, Cutive Mono */
+    font-family: "Cousine", monospace;
     background: var(--bg);
     color: var(--text);
     background-color: #F8F5F0;
   }
+
+  
+  .intro p {
+    font-family: "Xanh Mono", monospace;
+    font-size: 1.1rem;
+  } 
 
   .home-page {
     overflow-x: scroll;
@@ -50,7 +57,7 @@
     z-index: 100;
   }
 
-  h4 {
+  .project-type {
     line-height: 2;      
   }
   
@@ -60,12 +67,14 @@
     cursor: pointer;
     user-select: none;
     color: #97B090;
+    margin-left: 20px;
   }
   
   /* ===== NAV ===== */
   .nav {
     display: flex;
     gap: 24px;
+    margin-right: 60px;
   }
   
   .nav-item {
@@ -116,7 +125,7 @@
     flex: 1;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 32px;
+    gap: 8px;
   }
   
   .project-card img {
@@ -162,3 +171,6 @@
     color: #666666;
   }
   
+  .footer a:hover {
+    color: #97B090;
+  }
