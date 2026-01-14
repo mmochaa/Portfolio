@@ -164,3 +164,44 @@
     color: #97B090;
   }
   
+  .visual-projects {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+  }
+  .visual-projects .square {
+    grid-column: span 2;
+  }
+  
+  .visual-projects .wide {
+    grid-column: span 4;
+  }
+  
+  .visual-projects .tall {
+    grid-column: span 2;
+  }
+  .visual-projects img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  
+  /* aspect ratios */
+  .visual-projects .square img {
+    aspect-ratio: 1 / 1;
+  }
+  
+  .visual-projects .wide img {
+    aspect-ratio: 16 / 9;
+  }
+  
+  .visual-projects .tall img {
+    aspect-ratio: 3 / 4;
+  }
+  .visual-projects sub {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+        
