@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Craft Connect Case Study" />
+  <title>Craft Connect → Hobbyist — Your Name</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="project-style.css" />
+  <style>
+    /* Increase spacing for readability */
+    .project-content p,
+    .project-content ul,
+    .project-content li,
+    .project-content h2,
+    .project-content h3 {
+      line-height: 2;      /* more space between lines */
+      margin-bottom: 1.5em; /* extra spacing between elements */
+    }
+
+    .project-content ul {
+      padding-left: 2em; /* indent list items */
+    }
+
+    .project-gallery {
+      max-width: 900px;
+      margin: 3em auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+    }
+
+    .project-gallery img {
+      width: 100%;
+      max-width: 100%;
+      display: block;
+    }
+
+    
+  </style>
+</head>
+
+<body class="project-page">
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <a href="../index.html" class="symbol" id="symbol">ಇ.</a>
+
+  <nav class="nav">
+    <a href="../index.html" class="nav-item">UX Design</a>
+    <a href="../index.html#play" class="nav-item">Visual Design</a>
+    <a href="../index.html#about" class="nav-item">About</a>
+  </nav>
+</header>
+
+<!-- ================= PROJECT ================= -->
+<main class="project">
+
+  <!-- ===== HERO ===== -->
+  <section class="project-hero">
+    <div class="hero-left">
+      <h1>Craft Connect → Hobbyist</h1>
+      <sub class="subtitle">
+        Branding, Web, Identity
+      </sub>
+    </div>
+
+    <div class="hero-right">
+      <p>
+        A community-driven platform for discovering crafts, exchanging materials, and connecting with local creatives.
+      </p>
+    </div>
+  </section>
+
+  <img src="../images/ccintro.png" width="900px" class="center-image" alt="Craft Connect intro image">
+
+  <!-- ===== CASE STUDY CONTENT ===== -->
+  <section class="project-content">
+
+    <div>
+      <h2>Context & Overview</h2>
+      <p>
+        Craft Connect began as a collaborative team project in a software design course where the goal was to design and build a unique application from scratch. In a group of four, we researched user needs, defined product requirements, and scoped a platform aimed at helping crafters discover new skills, exchange surplus materials, and connect with local creative communities.
+      </p>
+      <p>
+        After the course ended, I revisited the concept independently and reimagined it as a focused product design case study, refining the scope, simplifying the experience, and translating the idea into a usable, technically feasible application.
+      </p>
+      <img src="../images/ccteam.png" width="800px" class="center-image" alt="teammates and roles">
+
+      <h3>The Problem</h3>
+      <p>Many people interested in creative hobbies face a fragmented and frustrating experience:</p>
+      <ul>
+        <li>Beginners struggle to find clear starting points and trustworthy tutorials</li>
+        <li>Experienced crafters often have leftover materials with no easy way to share them</li>
+        <li>Craft communities are scattered across forums and social platforms, often with poor moderation and low discoverability</li>
+      </ul>
+
+      <h3>Initial Steps & Team Direction</h3>
+      <p>As a team, we took apart and thought of Craft Connect as the broad system rather than a single feature. We identified key system components like users, materials, tutorials, and local communities and how they would interact.</p>
+
+      <h3>Key User Needs</h3>
+      <ul>
+        <li>New crafters need a low-pressure way to discover projects without feeling overwhelmed</li>
+        <li>Users with extra materials want a simple, local-first way to share or exchange supplies</li>
+        <li>Community members want safer, more positive interactions than existing forums provide</li>
+        <li>All users need clear navigation and accessibility regardless of technical experience</li>
+      </ul>
+
+      <h3>Technical Feasibility & Implementation</h3>
+      <p>We implemented an early version of Craft Connect to validate technical feasibility and explore how the concept translated into a real application. Working with React and JavaScript, we focused on:</p>
+      <ul>
+        <li>Translating core features into functional components</li>
+        <li>Identifying early limitations around complexity, state management, and scalability</li>
+        <li>Understanding the agile process and delegating tasks to complete a full application</li>
+      </ul>
+
+      <h3>Redesign & Improvements</h3>
+      <p>Revisiting the project independently, I refined the scope and visual direction:</p>
+      <ul>
+        <li>Reduced feature clutter to highlight core flows</li>
+        <li>Prioritized accessibility and clarity across all screens</li>
+        <li>Redesigned visual style to reflect the creative community</li>
+      </ul>
+
+      <h3>Core App Flows</h3>
+      <ul>
+        <li>Discovering and saving craft projects</li>
+        <li>Offering or requesting surplus materials nearby</li>
+        <li>Finding tutorials, whether video-based or written</li>
+      </ul>
+
+      
+      <h3>Wireframes & Final UI</h3>
+      <p>Low-fidelity wireframes were used to test layout and navigation, which then informed high-fidelity designs in Figma, emphasizing:</p>
+      <ul>
+        <li>Clear entry points for beginners</li>
+        <li>Progressive disclosure of features</li>
+        <li>High color contrast, spacing, and readable typography</li>
+      </ul>
+      <img src="../images/ccwireframes.png" alt="System/Class Diagram">
+
+      <h3>Reflection & Next Steps</h3>
+      <ul>
+        <li>Conduct usability testing with beginner crafters</li>
+        <li>Refine onboarding based on real feedback</li>
+        <li>Explore moderation tools to support healthy communities at scale</li>
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- ===== IMAGE GALLERY ===== -->
+  <section class="project-gallery">
+    <img src="../images/ccscreens.png" alt="System/Class Diagram">
+  </section>
+
+  <!-- ===== ROLE SECTION RIGHT-ALIGNED ===== -->
+  <section style="display:flex; justify-content:flex-end; margin:4em 0 2em;">
+    <p style="text-align:right; line-height:1.8;">
+      Designer, Developer<br>
+      6 Weeks · Personal Project
+    </p>
+  </section>
+  
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <a href="../index.html">← Back to Work</a>
+</footer>
+
+</body>
+</html>
