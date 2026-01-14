@@ -15,7 +15,8 @@
   
   /* ===== BASE ===== */
   body {
-    font-family: "Cousine", monospace;
+    font-family: "Space Mono", monospace;
+    font-weight: 500;
     background: var(--bg);
     color: var(--text);
     background-color: #F8F5F0;
