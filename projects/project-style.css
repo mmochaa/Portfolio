@@ -74,9 +74,10 @@ body {
     margin-bottom: 120px;
   }
   
+  
   .project-gallery img {
     width: 100%;
-    border: 1px solid var(--border);
+    /* border: 1px solid var(--border); */
   }
   
   /* ===== IMPACT ===== */
@@ -93,6 +94,10 @@ body {
     margin-bottom: 8px;
     font-size: 0.95rem;
   }
+
+  img {
+    margin-bottom: 40px;
+  }
   
   .center-image {
     display: block;
@@ -105,3 +110,63 @@ body {
     padding: 10px;
     border-radius: 1.5em;
   }
+
+  /* ===== CASE STUDY SPREAD ===== */
+
+.case-spread {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 140px;
+}
+
+.spread-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.spread-row.reverse {
+  grid-template-columns: 1fr 1.2fr;
+}
+
+/* images */
+.spread-images {
+  display: flex;
+  gap: 24px;
+}
+
+.spread-images img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .spread-row,
+  .spread-row.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .spread-images {
+    justify-content: center;
+  }
+}
+
+.txtsides {
+  display: flex;
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.txtleft , .txtright {
+  flex: 1;
+}
+
+.txtleft {
+  margin-right: 60px;
+}
