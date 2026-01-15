@@ -99,3 +99,9 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .footer a {
+    background-color: #F8F5F0;
+    padding: 10px;
+    border-radius: 1.5em;
+  }

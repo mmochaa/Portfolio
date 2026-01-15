@@ -213,4 +213,8 @@
     font-size: 0.75rem;
     color: var(--muted);
   }
+
+  .abtblurb {
+    font-family: "Xanh Mono", monospace;
+  }
         
