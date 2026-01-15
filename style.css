@@ -90,17 +90,15 @@
   
   /* ===== WORK LAYOUT ===== */
   .work-container {
-    display: grid;
-    grid-template-columns: 1fr 2.2fr; /* intro | projects */
+    display: flex;
     gap: 80px;
     align-items: flex-start;
-    
   }
   
   .intro {
     position: sticky;
     top: 5px; /* space for header */
-    width: 420px;
+    width: 320px;
     flex-shrink: 0;
     font-size: 1.1rem;
     line-height: 1.6;
