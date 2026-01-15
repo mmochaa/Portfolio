@@ -103,6 +103,15 @@
     font-size: 1.1rem;
     line-height: 1.6;
     font-family: "Xanh Mono", monospace;
+    
+   background-image: url('images/pretzel.png');
+    background-size: 300px;      
+    background-position: top left; 
+    background-repeat: no-repeat;
+
+    padding: 20px;
+
+    min-height: 300px;
   }
   
   /* ===== PROJECTS ===== */
@@ -110,7 +119,7 @@
     flex: 1;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* two per row */
-    gap: 16px;
+    gap: 8px;
   }
   
   .project-card img {
