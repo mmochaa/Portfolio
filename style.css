@@ -217,8 +217,13 @@
     color: var(--muted);
   }
 
+  .about{
+    font-family: "Inconsolata", monospace;
+  }
+
   .abtblurb {
     font-family: "Xanh Mono", monospace;
+    margin-bottom: 20px;
   }
         
   .embed-wrapper {
