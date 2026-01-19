@@ -110,6 +110,13 @@ body {
     margin-right: auto;
   }
 
+  .github {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7%;
+  }
+
   .footer a {
     background-color: #F8F5F0;
     padding: 10px;
