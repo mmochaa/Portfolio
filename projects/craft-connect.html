@@ -1,249 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Craft Connect Case Study" />
-  <title>Craft Connect → Hobbyist — Your Name</title>
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="project-style.css" />
-  <style>
-    /* Increase spacing for readability */
-    .project-content p,
-    .project-content ul,
-    .project-content li,
-    .project-content h2,
-    .project-content h3 {
-      line-height: 2;      /* more space between lines */
-      margin-bottom: 1.5em; /* extra spacing between elements */
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Craft Connect → Hobbyist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Cousine:ital,wght@0,400;0,700;1,400&family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
 
-    .project-content ul {
-      padding-left: 2em; /* indent list items */
-    }
-
-    .project-gallery {
-      max-width: 900px;
-      margin: 3em auto;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1em;
-    }
-
-    .project-gallery img {
-      width: 100%;
-      max-width: 100%;
-      display: block;
-    }
-
-    
-  </style>
+<link rel="stylesheet" href="craft-connect.css">
 </head>
+<body class="page">
 
-<body class="project-page">
-
-<!-- ================= HEADER ================= -->
+<!-- HEADER -->
 <header class="header">
-  <a href="../index.html" class="symbol" id="symbol">☼</a>
-
-  <nav class="nav">
-    <a href="../index.html" class="nav-item">Design Work</a>
-    <a href="../index.html#play" class="nav-item">Creative Work</a>
-    <a href="../index.html#about" class="nav-item">About</a>
-  </nav>
+  <a href="../index.html" class="symbol">☼</a>
+  <ul class="nav">
+    <li class="nav-item"><a href="../index.html">Design Work</a></li>
+    <li class="nav-item"><a href="../index.html#play">Creative Work</a></li>
+    <li class="nav-item"><a href="../index.html#about">About</a></li>
+  </ul>
 </header>
 
-<!-- ================= PROJECT ================= -->
-<main class="project">
+<!-- READING BAR -->
+<div class="reading-bar">
+  <div class="reading-item"><div class="reading-dot"></div><span class="reading-text">Estimated reading time: 5 min</span></div>
+  <div class="reading-item"><div class="reading-dot" style="background:var(--muted);"></div><span class="reading-text">Academic → Personal Redesign</span></div>
+</div>
 
-  <!-- ===== HERO ===== -->
-  <section class="project-hero">
-    <div class="hero-left">
-      <h1>Craft Connect → Hobbyist</h1>
-      <sub class="subtitle">
-        UX Design, Web Application to Mobile Application
-      </sub>
-      <img src="../media/craftconnect/cctech.png" class="techicons" width="300px" alt="Craft Connect Tech Used">
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-label">UX Design · Product Design & Development</div>
+  <h1>Craft Connect <span class="arrow">→</span> Hobbyist</h1>
+  <p class="hero-sub">A community-driven platform for discovering crafts, exchanging materials, and connecting with local creatives.</p>
+  <div class="hero-meta">
+    <div class="meta-item">
+      <div class="meta-label">Role</div>
+      <div class="meta-value">Product Designer & Developer</div>
     </div>
+    <div class="meta-item">
+      <div class="meta-label">Type</div>
+      <div class="meta-value">Academic → Personal Redesign</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Stack</div>
+      <div class="meta-value">React · Figma · JavaScript</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Team</div>
+      <div class="meta-value">Kelly · Tim · Meagan · Me</div>
+    </div>
+  </div>
+</div>
 
-    <div class="hero-right">
-      <p>
-        A community-driven platform for discovering crafts, exchanging materials, and connecting with local creatives.
-      </p>
-    </div>
+<img src="../media/craftconnect/ccintro.png" style="width:60%;" class="center-image" alt="Craft Connect intro image">
+
+<!-- OVERVIEW GRID -->
+<div class="overview-grid">
+  <div class="overview-cell">
+    <div class="cell-label">Project Overview</div>
+    <div class="cell-value">Craft Connect began as a collaborative team project in a software design course, scoped to centralize learning, material exchange, and community-building for hobbyist crafters. After the course ended, I revisited the concept independently — refining scope, redesigning for mobile, and translating the idea into a polished, accessible product design case study.</div>
+  </div>
+  <div class="overview-cell">
+    <div class="cell-label">Team Phase</div>
+    <div class="cell-value"><strong>Concept definition</strong> · requirements gathering · system architecture · frontend implementation with React + JavaScript</div>
+  </div>
+  <div class="overview-cell">
+    <div class="cell-label">Solo Phase</div>
+    <div class="cell-value"><strong>UX redesign</strong> · interaction design · mobile-first · Figma high-fidelity · accessibility implementation</div>
+  </div>
+</div>
+
+<hr>
+
+<!-- PROBLEM -->
+<div class="content-wrap">
+  <section>
+    <div class="section-num">01 — Problem Statement</div>
+    <h2>A fragmented, frustrating experience for hobbyist crafters</h2>
+    <p>Many people interested in creative hobbies face scattered resources, unclear entry points, and communities that feel unwelcoming. There was no single place to learn, share, and connect.</p>
   </section>
+</div>
 
-  <img src="../media/craftconnect/ccintro.png" width="700px" class="center-image" alt="Craft Connect intro image">
+<div class="problem-grid">
+  <div class="problem-card">
+    <div class="problem-title">Beginners</div>
+    <div class="problem-desc">Struggle to find clear starting points and trustworthy tutorials — overwhelmed before they even start.</div>
+  </div>
+  <div class="problem-card">
+    <div class="problem-title">Experienced Crafters</div>
+    <div class="problem-desc">Accumulate leftover materials with no easy, local way to share or exchange them.</div>
+  </div>
+  <div class="problem-card">
+    <div class="problem-title">Craft Communities</div>
+    <div class="problem-desc">Scattered across forums and social platforms, with poor moderation and low discoverability.</div>
+  </div>
+</div>
 
-  <!-- ===== CASE STUDY CONTENT ===== -->
-  <section class="project-content">
-
-    <div>
-      <h2>Context & Overview</h2>
-      <p>
-        Craft Connect began as a collaborative team project in a software design course where the goal was to design and build a unique application from scratch. In a group of four, we researched user needs, defined product requirements, and scoped a platform aimed at helping crafters discover new skills, exchange surplus materials, and connect with local creative communities.
-      </p>
-      <p>
-        After the course ended, I revisited the concept independently and reimagined it as a focused product design case study, refining the scope, simplifying the experience, and translating the idea into a usable, technically feasible application.
-      </p>
-      <img src="../media/craftconnect/ccteam.png" width="700px" class="center-image" alt="teammates and roles">
-
-      <h3>The Problem</h3>
-      <p>Many people interested in creative hobbies face a fragmented and frustrating experience:</p>
-      <ul>
-        <li>Beginners struggle to find clear starting points and trustworthy tutorials</li>
-        <li>Experienced crafters often have leftover materials with no easy way to share them</li>
-        <li>Craft communities are scattered across forums and social platforms, often with poor moderation and low discoverability</li>
-      </ul>
-      
-      <h3>Key User Needs</h3>
-      <ul>
-        <li>New crafters need a low-pressure way to discover projects without feeling overwhelmed</li>
-        <li>Users with extra materials want a simple, local-first way to share or exchange supplies</li>
-        <li>Community members want safer, more positive interactions than existing forums provide</li>
-        <li>All users need clear navigation and accessibility regardless of technical experience</li>
-      </ul>
-      <img src="../media/craftconnect/ccsystemdiagram.png" width="700px" class="center-image" alt="System/Class Diagram">
-
-      <h3>Key User Needs</h3>
-      <ul>
-        <li>New crafters need a low-pressure way to discover projects without feeling overwhelmed</li>
-        <li>Users with extra materials want a simple, local-first way to share or exchange supplies</li>
-        <li>Community members want safer, more positive interactions than existing forums provide</li>
-        <li>All users need clear navigation and accessibility regardless of technical experience</li>
-      </ul>
-
-      <h3>Technical Feasibility & Implementation</h3>
-      <p>We implemented an early version of Craft Connect to validate technical feasibility and explore how the concept translated into a real application. Working with React and JavaScript, we focused on:</p>
-      <ul>
-        <li>Translating core features into functional components</li>
-        <li>Identifying early limitations around complexity, state management, and scalability</li>
-        <li>Understanding the agile process and delegating tasks to complete a full application</li>
-      </ul>
-
-      <img src="../media/craftconnect/ccwebapp.png" width="700px" class="center-image" alt="Craft Connect Web Application">
-
-      <h3>Redesign & Improvements</h3>
-      <p>Revisiting the project independently, I refined the scope and visual direction:</p>
-      <ul>
-        <li>Reduced feature clutter to highlight core flows</li>
-        <li>Prioritized accessibility and clarity across all screens</li>
-        <li>Redesigned visual style to reflect the creative community</li>
-      </ul>
-      <img src="../media/craftconnect/ccappflow.png" width="500px" class="center-image" alt="Craft Connect intro image">
-
-
-      <h3>Core App Flows</h3>
-      <ul>
-        <li>Discovering and saving craft projects</li>
-        <li>Offering or requesting surplus materials nearby</li>
-        <li>Finding tutorials, whether video-based or written</li>
-      </ul>
-      <img src="../media/craftconnect/ccflow.png" width="700px" class="center-image" alt="Craft Connect intro image">
-
-      
-      <h3>Wireframes & Final UI</h3>
-      <p>Low-fidelity wireframes were used to test layout and navigation, which then informed high-fidelity designs in Figma, emphasizing:</p>
-      <ul>
-        <li>Clear entry points for beginners</li>
-        <li>Progressive disclosure of features</li>
-        <li>High color contrast, spacing, and readable typography</li>
-      </ul>
-      <img src="../media/craftconnect/ccwireframes.png" alt="Wireframes">
-
-      <h3>Final UI</h3>
-      <p>I translated the wireframes into high-fidelity designs in Figma, prioritizing clarity, accessibility, and consistency.</p>
-      <img src="../media/craftconnect/ccui1.png" width="900px" class="center-image" alt="Craft Connect intro image">
-      
-      <div class="txtsides">
-        <div class="txtleft">
-          <p>The map lets users browse trade listings nearby, based on a distance they choose themselves. It helps them connect with others in their area while setting clear limits on how far they're willing to travel to pick up materials or supplies.</p>
-          </div>
-        <div class="txtright">
-          <p>The listing feature shows users trade posts that match both their selected tags and their chosen mile radius. Once a listing catches their interest, they can start a conversation with the owner directly through the platform to coordinate the exchange.</p>
-          </div>
-      </div>
-
-      <section class="case-spread">
-        <!-- Top row -->
-        <div class="spread-row">
-          <div class="spread-images">
-            <img src="../media/craftconnect/ccui2.png" width="900px" alt="Craft Connect intro image">
-          </div>
-      
-          <div class="spread-text">
-            <p>
-              The home screen displays algorithm-recommended projects, showing
-              the user both the project’s rating and the estimated time needed
-              to complete it.
-            </p>
-      
-            <p>
-              Users can also save projects to revisit later. The “like” feature
-              was intentionally left out to avoid creating the kind of toxic,
-              competitive environment often found on social media.
-            </p>
-          </div>
-        </div>
-      
-        <!-- Bottom row -->
-        <div class="spread-row reverse">
-          <div class="spread-text">
-            <p>
-              The Guide section features a variety of beginner-friendly
-              instruction guides in text format. When a user highlights a
-              hyperlinked keyword or important term, a pop-up page appears with
-              a brief summary of the topic.
-            </p>
-      
-            <p>
-              This page may also include user-submitted tips or input, along with
-              a helpful video to provide visual support and make the instructions
-              easier to follow.
-            </p>
-          </div>
-      
-          <div class="spread-images">
-            <img src="../media/craftconnect/ccui3.png" width="1000px" alt="Craft Connect intro image">
-          </div>
-        </div>
-      
-      </section>
-      
-
-      <h3>Reflection & Next Steps</h3>
-      <p>Revisiting Craft Connect allowed me to practice stepping back from a broad concept and making focused product decisions. If I continued the project, I would:</p>
-      <ul>
-        <li>Conduct usability testing with beginner crafters</li>
-        <li>Refine onboarding based on real feedback</li>
-        <li>Explore moderation tools to support healthy communities at scale</li>
-      </ul>
-
+<div class="content-wrap">
+  <section style="margin-top:0;">
+    <div class="pull-quote">
+      <p>"How might we design an app that centralizes learning, material exchange, and community-building for crafters of all levels?"</p>
     </div>
   </section>
 
-  <!-- ===== IMAGE GALLERY ===== -->
-  <section class="project-gallery">
-     <img src="../media/craftconnect/ccscreens.png" width="2000px" alt="Craft Connect Final Screens">
-     <iframe class="center-image" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/oGzwHxNBOhpAbFSXZLa7Vz/CraftConnect-Redesign?page-id=1291%3A644&node-id=1291-678&viewport=201%2C7%2C0.2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1291%3A678&embed-host=share" allowfullscreen></iframe>
-    <p class="center-image">View the Github here!</p>
+  <hr>
+
+  <section>
+    <div class="section-num">02 — User Needs</div>
+    <h2>What real users needed most</h2>
+    <p>From research and discussion, four consistent needs shaped every design decision that followed.</p>
+  </section>
+</div>
+
+<div class="full-grid-wrap">
+<div class="needs-grid">
+  <div class="need-card">
+    <div class="need-icon">🌱</div>
+    <div class="need-title">Low-pressure discovery</div>
+    <div class="need-desc">New crafters need to explore projects without feeling overwhelmed or judged by engagement metrics.</div>
+  </div>
+  <div class="need-card">
+    <div class="need-icon">📦</div>
+    <div class="need-title">Local material exchange</div>
+    <div class="need-desc">Users with extra supplies want a simple, location-aware way to share or trade with nearby crafters.</div>
+  </div>
+  <div class="need-card">
+    <div class="need-icon">🤝</div>
+    <div class="need-title">Safer community space</div>
+    <div class="need-desc">Community members want positive, moderated interactions — not the toxicity of mainstream social platforms.</div>
+  </div>
+  <div class="need-card">
+    <div class="need-icon">♿</div>
+    <div class="need-title">Universal accessibility</div>
+    <div class="need-desc">Clear navigation and accessible design regardless of technical experience or ability level.</div>
+  </div>
+</div>
+</div>
+
+<div class="content-wrap">
+  <section style="margin-top:48px;">
+    <hr style="margin-bottom:80px;">
+    <div class="section-num">03 — Technical Foundation</div>
+    <h2>Building to learn, not just to polish</h2>
+    <p>As part of the team phase, we built an early version of Craft Connect to validate technical feasibility. The goal was insight over polish — understanding how proposed features behaved under real constraints.</p>
+    <div class="tech-row">
+      <span class="tech-tag green">React</span>
+      <span class="tech-tag green">JavaScript</span>
+      <span class="tech-tag">Component Architecture</span>
+      <span class="tech-tag">State Management</span>
+      <span class="tech-tag">Agile Workflow</span>
+    </div>
+    <p>Building the prototype surfaced constraints invisible during planning — feature complexity competing for attention, unclear hierarchy, and accessibility that existed only in documentation rather than the actual UI. These insights directly motivated the solo redesign phase.</p>
+    <img src="../media/craftconnect/ccwebapp.png" style="width:100%; margin: 32px 0 8px;" class="center-image" alt="Craft Connect Web Application">
+    <p style="font-family:'Space Mono',monospace; font-size:0.7rem; color:var(--muted); text-align:center; margin-bottom: 32px; letter-spacing:0.04em;">Original web application</p>
+    <img src="../media/craftconnect/ccsystemdiagram.png" style="width:100%; margin: 0 0 8px;" class="center-image" alt="System/Class Diagram">
+    <p style="font-family:'Space Mono',monospace; font-size:0.7rem; color:var(--muted); text-align:center; letter-spacing:0.04em;">System / class diagram</p>
   </section>
 
-  <a href="https://github.com/mmochaa/Craft-Connect">
-    <img src="../media/github.png" width="20px" class="github" alt="Craft Connect intro image">
-    </a>
+  <hr>
 
-  <!-- ===== ROLE SECTION RIGHT-ALIGNED ===== -->
-  <section style="display:flex; justify-content:flex-end; margin:4em 0 2em;">
-    <p style="text-align:right; line-height:1.8;">
-      Designer, Developer<br>
-      Academic -> Personal Project
-    </p>
+  <section>
+    <div class="section-num">04 — Identifying Opportunities</div>
+    <h2>What needed to change — and why</h2>
+    <p>Revisiting the project independently, I identified several interaction-level issues the original web app failed to address:</p>
   </section>
-  
-</main>
+</div><!-- /content-wrap -->
 
-<!-- ================= FOOTER ================= -->
+<div style="display:flex; gap:32px; align-items:flex-start; max-width:1100px; margin: 32px auto 0; padding: 0 40px;">
+  <div style="flex:1; text-align:center;">
+    <img src="../media/craftconnect/ccappflow.png" style="width:100%;" alt="Craft Connect hand-sketched flow">
+    <p style="font-family:'Space Mono',monospace; font-size:0.7rem; color:var(--muted); margin-top:8px; letter-spacing:0.04em;">Hand-sketched app flow</p>
+  </div>
+  <div style="flex:1; text-align:center;">
+    <img src="../media/craftconnect/ccflow.png" style="width:100%;" alt="Craft Connect app flow diagram">
+    <p style="font-family:'Space Mono',monospace; font-size:0.7rem; color:var(--muted); margin-top:8px; letter-spacing:0.04em;">App flow diagram</p>
+  </div>
+</div>
+
+<div class="problem-grid cols-4 no-bg">
+  <div class="problem-card">
+    <div class="problem-title">Too Many Features</div>
+    <div class="problem-desc">Competed for attention during first use — the experience felt cluttered rather than inviting.</div>
+  </div>
+  <div class="problem-card">
+    <div class="problem-title">Core Actions</div>
+    <div class="problem-desc">Discovering projects and exchanging materials were not clearly prioritized or easy to reach.</div>
+  </div>
+  <div class="problem-card">
+    <div class="problem-title">Accessibility</div>
+    <div class="problem-desc">Existed at the requirements level but wasn't reflected in user flows or visual design.</div>
+  </div>
+  <div class="problem-card">
+    <div class="problem-title">Web-first Format</div>
+    <div class="problem-desc">Limited the experience — the nature of the app demanded a mobile-first approach.</div>
+  </div>
+</div>
+
+<div class="content-wrap" style="margin-top:0;">
+<hr>
+</div>
+
+<!-- DESIGN DECISIONS -->
+<div class="content-wrap">
+  <section>
+    <div class="section-num">05 — Design Decisions</div>
+    <h2>Focused choices, clear rationale</h2>
+  </section>
+</div>
+
+<div class="decisions-grid">
+  <div class="decision">
+    <div class="decision-num">01</div>
+    <div class="decision-label">Core App Flows</div>
+    <h3>Narrowing to three essential flows</h3>
+    <p><span class="pill">Problem</span> &nbsp;The original scope tried to do too much at once, creating cognitive overload for new users on first use.</p>
+    <p><span class="pill">Decision</span> &nbsp;The redesign centres on exactly three flows — discovering projects, exchanging materials locally, and finding tutorials. Every screen maps to one of these.</p>
+    <p><span class="pill">Why it works</span> &nbsp;Focused flows reduce decision fatigue and make the app immediately learnable, especially for beginners who need a clear path forward.</p>
+  </div>
+
+  <div class="decision">
+    <div class="decision-num">02</div>
+    <div class="decision-label">Interaction Design</div>
+    <h3>Removing the "like" button — intentionally</h3>
+    <p><span class="pill">Problem</span> &nbsp;Traditional engagement mechanics create competitive dynamics that discourage beginners from sharing their work.</p>
+    <p><span class="pill">Decision</span> &nbsp;The home screen features saves and ratings — but no likes or counts that gamify participation.</p>
+    <p><span class="pill">Why it works</span> &nbsp;Removing vanity metrics directly protects the low-pressure environment users needed. A values-driven decision, not just a simplification.</p>
+  </div>
+
+  <div class="decision">
+    <div class="decision-num">03</div>
+    <div class="decision-label">Information Architecture</div>
+    <h3>Progressive disclosure over feature overload</h3>
+    <p><span class="pill">Problem</span> &nbsp;First-time users encountered too many options simultaneously, leading to analysis paralysis.</p>
+    <p><span class="pill">Decision</span> &nbsp;Wireframes and screens were designed with progressive disclosure — complexity revealed only when users are ready for it.</p>
+    <p><span class="pill">Why it works</span> &nbsp;Beginners land on simple, clear screens. Power features are accessible but never imposing.</p>
+  </div>
+
+  <div class="decision">
+    <div class="decision-num">04</div>
+    <div class="decision-label">Accessibility</div>
+    <h3>Accessibility in the UI — not just in the docs</h3>
+    <p><span class="pill">Problem</span> &nbsp;The original app documented accessibility requirements but didn't consistently implement them in the actual design.</p>
+    <p><span class="pill">Decision</span> &nbsp;Final Figma designs enforce high colour contrast, clear typographic hierarchy, simplified iconography, and comfortable spacing on every screen.</p>
+    <p><span class="pill">Why it works</span> &nbsp;Accessibility has to be expressed visually to be real — making the app genuinely usable for all skill and ability levels.</p>
+  </div>
+</div>
+
+<!-- WIREFRAMES -->
+<div class="content-wrap">
+  <section style="margin-top: 60px;">
+    <div class="section-num" style="margin-bottom:16px;">Wireframes</div>
+  </section>
+</div>
+<img src="../media/craftconnect/ccwireframes.png" style="width:70%; display:block; margin: 0 auto 48px;" alt="Wireframes">
+
+<!-- FINAL UI -->
+<div class="content-wrap">
+  <section>
+    <div class="section-num" style="margin-bottom:16px;">Final UI</div>
+  </section>
+</div>
+
+<img src="../media/craftconnect/ccui1.png" style="width:60%; display:block; margin: 0 auto 48px;" alt="Craft Connect Final UI">
+
+<!-- ccui2 side by side with text -->
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; margin: 0 80px 48px;">
+  <img src="../media/craftconnect/ccui2.png" style="width:85%;" alt="Craft Connect Home Screen UI">
+  <div>
+    <p style="margin-bottom:16px;">The home screen displays algorithm-recommended projects, showing the user both the project's rating and the estimated time needed to complete it.</p>
+    <p>Users can also save projects to revisit later. The "like" feature was intentionally left out to avoid creating the kind of toxic, competitive environment often found on social media.</p>
+  </div>
+</div>
+
+<!-- ccui3 side by side with text -->
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; margin: 0 80px 48px;">
+  <div>
+    <p>The Guide section features a variety of beginner-friendly instruction guides in text format. When a user highlights a hyperlinked keyword or important term, a pop-up page appears with a brief summary of the topic.</p>
+    <p style="margin-top:16px;">This page may also include user-submitted tips or input, along with a helpful video to provide visual support and make the instructions easier to follow.</p>
+  </div>
+  <img src="../media/craftconnect/ccui3.png" style="width:85%;" alt="Craft Connect Guide UI">
+</div>
+
+<!-- FULL SCREENS -->
+<div style="margin: 0 0 80px;">
+  <img src="../media/craftconnect/ccscreens.png" style="width:60%; display:block; margin: 0 auto;" alt="Craft Connect Final Screens">
+</div>
+
+<!-- REFLECTION -->
+<div class="content-wrap">
+  <section>
+    <div class="section-num">06 — Reflection</div>
+    <h2>What this project taught me</h2>
+    <p>Revisiting Craft Connect allowed me to practice stepping back from a broad concept and making focused, justified product decisions. The gap between the original implementation and the redesign was instructive — not because the first version failed, but because building it revealed exactly what needed to change.</p>
+    <div class="pull-quote">
+      <p>"Start with systems thinking, then refine toward clarity, usability, and feasibility."</p>
+    </div>
+    <div class="reflection-box">
+      <div class="cell-label">If I continued this project</div>
+      <ul>
+        <li>Conduct usability testing specifically with beginner crafters to validate the low-pressure onboarding experience</li>
+        <li>Further refine onboarding flows based on real observational feedback — not assumptions</li>
+        <li>Explore moderation tooling to support healthy, positive communities as the platform scales</li>
+        <li>Test the "no likes" decision with users — validate whether it genuinely reduces anxiety or creates new confusion</li>
+      </ul>
+    </div>
+  </section>
+
+  <div style="text-align:center; padding: 20px 0 120px; border-top: 1px solid var(--border); padding-top: 48px;">
+    <a href="https://github.com/mmochaa/Craft-Connect" target="_blank" class="github-link">View on GitHub →</a>
+    <p style="margin-top:16px; font-size:0.72rem; font-family:'Space Mono',monospace; color:var(--muted);">Designer, Developer &nbsp;·&nbsp; Academic → Personal Project</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
 <footer class="footer">
   <a href="../index.html">← Back to Work</a>
 </footer>
