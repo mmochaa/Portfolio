@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PocketShelf Case Study" />
+  <title>Craft Connect → Hobbyist — Your Name</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="project-style.css" />
+  <style>
+    /* Increase spacing for readability */
+    .project-content p,
+    .project-content ul,
+    .project-content li,
+    .project-content h2,
+    .project-content h3 {
+      line-height: 2;      /* more space between lines */
+      margin-bottom: 1.5em; /* extra spacing between elements */
+    }
+
+    .project-content ul {
+      padding-left: 2em; /* indent list items */
+    }
+
+    .project-gallery {
+      max-width: 900px;
+      margin: 3em auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+    }
+
+    .project-gallery img {
+      width: 100%;
+      max-width: 100%;
+      display: block;
+    }
+
+    
+  </style>
+</head>
+
+<body class="project-page">
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <a href="../index.html" class="symbol" id="symbol">☼</a>
+
+  <nav class="nav">
+    <a href="../index.html" class="nav-item">Design Work</a>
+    <a href="../index.html#play" class="nav-item">Creative Work</a>
+    <a href="../index.html#about" class="nav-item">About</a>
+  </nav>
+</header>
+
+<!-- ================= PROJECT ================= -->
+<main class="project">
+
+  <!-- ===== HERO ===== -->
+  <section class="project-hero">
+    <div class="hero-left">
+      <h1>PocketShelf</h1>
+      <sub class="subtitle">
+        UX / UI Design, Mobile Application Development
+      </sub>
+      <img src="../media/pocketshelf/pstech.png" class="techicons" width="300px" alt="PocketShelf Tech Used">
+    </div>
+
+    <div class="hero-right">
+      <p>
+        A mobile reading tracker that makes it easy to log, organize, and reflect on your reads.
+      </p>
+    </div>
+  </section>
+
+  <img src="../media/pocketshelf/pstitle.png" width="700px" class="center-image" alt="Craft Connect intro image">
+
+  <!-- ===== CASE STUDY CONTENT ===== -->
+  <section class="project-content">
+
+    <div>
+      <h2>Context & Overview</h2>
+      <p>
+        PocketShelf began as a class project in a mobile application development course, where the goal was to design and build a mobile app from concept to implementation. I led the product design for the project, focusing on defining the experience, user flows, and interface design, while collaborating with teammates during development.
+      </p>
+      <p>
+        While many reading apps emphasize progress tracking or social features, I wanted to explore how a mobile experience could better support organization and reflection, treating books not just as items to check off, but as a more memorable experience
+      </p>
+      <p>
+        The product was designed as a mobile-first experience to support quick interactions, visual browsing, and lightweight reflection throughout a user’s reading journey.
+      </p>
+      <img src="../media/pocketshelf/psteaminfo.png" width="600px" class="center-image" alt="teammates and roles">
+
+      <h3>The Problem</h3>
+      <p>Many readers struggle to keep track of what they’ve read, what they want to read next, and what they’ve taken away from those books. Tools already out there often feel overly social, rigid, or transactional, sometimes prioritizing completion metrics over personal meaning.</p>
+      <ul>
+        <li>Readers want a simple way to organize books without friction</li>
+        <li>Important moments, quotes, or reflections are easily forgotten</li>
+        <li>Switching between multiple tools (notes apps, bookmarks, reading trackers) creates fragmentation</li>
+      </ul>
+
+      <h3>Understanding User Needs</h3>
+      <p>Through early exploration, research, and analysis of existing reading apps, we focused on a few core user needs:</p>
+      <ul>
+        <li>Readers want to visually browse their collection in a way that feels personal </li>
+        <li>They need a lightweight way to capture memories, quotes, or thoughts while reading </li>
+        <li>The experience should feel calm and intentional, not gamified or competitive </li>
+        <li> Core actions should be fast and accessible on mobile </li>
+      </ul>
+      <p>These helped to build both the structure of the app and its later implementation.</p>
+
+      <h3>Defining the Experience</h3>
+      <p> Rather than designing PocketShelf as a social platform, we designed it as a personal reading companion. The experience centers around three core areas: </p>
+      <ul>
+        <li>A personal library for organizing books</li>
+        <li>Individual book spaces for notes and memories</li>
+        <li>Lightweight tracking to support continuity without pressure</li>
+      </ul>
+      <p>I designed the experience around a small number of high-impact flows:
+        Browsing and organizing a personal book collection
+        Adding and revisiting notes, quotes, or memories tied to a book
+        Tracking reading status without forcing completion metrics</p>
+      <p>Focusing on these flows helped me design the app, making sure it was intuitive and also helping me ensure that each screen had a clear purpose.</p>
+      
+      <img src="../media/pocketshelf/psflow.png" width="700px" class="center-image" alt="Craft Connect Web Application">
+
+      <h3>Wireframes & Layout Exploration</h3>
+      <p>I explored layout and hierarchy through low-fidelity wireframes, prioritizing:</p>
+      <ul>
+        <li>Visual browsing over text-heavy lists</li>
+        <li>Clear entry points into individual books</li>
+        <li>Minimal UI elements to reduce distraction</li>
+      </ul>
+      <p>Here is when we were able to present our initial app ideas to our peers & instructors to receive feedback about our app ideas, and features</p>
+
+      <img src="../media/pocketshelf/pswireframes.png" class="center-image" alt="Craft Connect Web Application">
+
+      <h3>Visual Design & Improvements</h3>
+      <p>Following in-class critiques and feedback from both instructors and peers, I revisited the design to:</p>
+      <ul>
+        <li>Improve hierarchy and clarity on key screens</li>
+        <li>Simplify interactions that felt visually heavy</li>
+        <li>Expand on additional features that would enhance the user’s experience</li>
+      </ul>
+      <p>The visual design was intentionally warm and minimal, using soft color palettes and gentle typography to create a calm, reading-adjacent experience.</p>
+      <img src="../media/pocketshelf/psui.png" width="800px" class="center-image" alt="Craft Connect intro image">
+
+
+      <h3>Implementation & Iteration</h3>
+      <p>After finalizing the design, the app was implemented in Android Studio as part of the course. Seeing the designs translated into a working application helped validate interaction decisions and revealed opportunities for refinement.</p>
+      <img src="../media/pocketshelf/pscode.png" width="900px" class="center-image" alt="Craft Connect intro image">
+
+      <h3>Reflection & What I’d Explore Next</h3>
+      <p>If I continued developing PocketShelf, I would explore:</p>
+      <ul>
+        <li>Smarter organization through tags or themes</li>
+        <li>Accessibility improvements for text-heavy interactions</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== IMAGE GALLERY ===== -->
+  <section class="project-gallery">
+    <img src="../media/pocketshelf/psscreens.png" width="2000px" alt="System/Class Diagram">
+    <p class="center-image">View the Github here!</p>
+  </section>
+  <a href="https://github.com/mhkerchen/PocketShelf">
+  <img src="../media/github.png" width="20px" class="github" alt="Craft Connect intro image">
+  </a>
+
+  <!-- ===== ROLE SECTION RIGHT-ALIGNED ===== -->
+  <section style="display:flex; justify-content:flex-end; margin:4em 0 2em;">
+    <p style="text-align:right; line-height:1.8;">
+      Designer, Developer<br>
+      Academic Project
+    </p>
+  </section>
+  
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <a href="../index.html">← Back to Work</a>
+</footer>
+
+</body>
+</html>
